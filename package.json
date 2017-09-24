@@ -1,14 +1,18 @@
 {
   "name": "gameserver",
-  "version": "0.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "1.0.0",
+  "description": "A game server",
+  "main": "server.js",
   "scripts": {
     "dev": "webpack-dev-server --inline --hot --quiet",
-    "build": "rm -rf build/* && webpack --progress --hide-modules --config webpack.production.js"
+    "build": "rm -rf build/* && webpack --progress --hide-modules --config webpack.production.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "dependencies": {
-    "vue": "^1.0.8"
+    "vue": "^1.0.8",
+    "express": "^4.15.4",
+    "socket.io": "^2.0.3"
   },
   "devDependencies": {
     "vue-loader": "^7.0.3",
